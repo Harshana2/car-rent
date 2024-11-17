@@ -524,6 +524,7 @@ a:focus {
   margin-top: 15px;
 }
 
+
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
@@ -1500,17 +1501,19 @@ color: #ffffff;
 }
 
 .currency-input {
-  padding-left: 50px; /* Space for the icon */
+ /* Space for the icon */
+  padding:  10px 10px 10px 30px;
   width: 100%;
   max-width: 300px;
-  padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
   background-color: #fff;
   cursor: pointer;
-  transition: border-color 0.3s ease
+  transition: border-color 0.3s ease;
+  
+
 }
 .currency-input::placeholder {
   padding-left: 30px; /* Adjust this value to move the placeholder text to the right */
