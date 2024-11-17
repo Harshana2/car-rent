@@ -1489,11 +1489,47 @@ color: #ffffff;
 
 .payment-image-sampath{
   width: 100%;  /* Set the width to a percentage of the parent container */
-  height: 60px; /* Maintain the aspect ratio */
+  height: 60%; /* Maintain the aspect ratio */
   margin-bottom: 20px; /* Space between the image and the text */
   max-width: 600px;  / /* Space between the image and text */
 
 }
+.currency-input-container {
+  position: relative;
+}
+
+.currency-input {
+  padding-left: 50px; /* Space for the icon */
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease
+}
+.currency-input::placeholder {
+  padding-left: 30px; /* Adjust this value to move the placeholder text to the right */
+}
+.currency-input:hover,
+.currency-input:focus {
+  border-color: #da7426;
+  outline: none;
+}
+
+.currency-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents icon from blocking input */
+  color: #000000; /* Icon color */
+  font-size: 16px; /* Adjust icon size */
+}
+
 
 /* Text Container Styling */
 .text-container {
@@ -1528,11 +1564,19 @@ color: #ffffff;
 
 /* Input and Form Field Styling */
 .form-control {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 5px;
   padding: 10px;
+  height: 50px; 
 
 }
+/* Dropdown hover and focus effects */
+.form-control:hover,
+.form-control:focus {
+  border-color: #da7426;
+  outline: none;
+}
+
 
 .message-box {
   resize: vertical;
