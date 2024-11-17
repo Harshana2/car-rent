@@ -1512,8 +1512,6 @@ color: #ffffff;
   background-color: #fff;
   cursor: pointer;
   transition: border-color 0.3s ease;
-  
-
 }
 .currency-input::placeholder {
   padding-left: 30px; /* Adjust this value to move the placeholder text to the right */
