@@ -1,3 +1,47 @@
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Capture parameters from the URL
+  const quotationID = getQueryParam("quotationID");
+  const name = getQueryParam("name");
+  const currency = getQueryParam("currency");
+  const amount = getQueryParam("amount");
+
+  // Populate the form fields with the query parameters if they exist
+  if (quotationID) {
+      document.getElementById("quotation-id").value = quotationID;
+  }
+
+  if (name) {
+      document.getElementById("name").value = name;
+  }
+
+  if (currency) {
+      document.getElementById("currency-select").value = currency;
+      updateCurrencySymbol(); // Call function to update the currency symbol
+  }
+
+  if (amount) {
+      document.getElementById("amount").value = amount;
+  }
+});
+
+// Function to update the currency symbol
+function updateCurrencySymbol() {
+  const currencySelect = document.getElementById("currency-select");
+  const selectedOption = currencySelect.options[currencySelect.selectedIndex];
+  const symbol = selectedOption.getAttribute("data-symbol");
+  document.getElementById("currency-icon").innerText = symbol;
+
+  // Update the input field placeholder
+  const placeholderText = `Enter amount in ${currencySelect.value}`;
+  document.getElementById("amount").setAttribute("placeholder", placeholderText);
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const pickupLocation = document.getElementById("destination");
