@@ -47,8 +47,18 @@ body {
   font-weight: bold;
   text-align: left;
 }
+.heading_ccontainer h2 {
+  position:relative;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
 
 .heading_container h2 span {
+  color: #da7426;
+}
+.heading_ccontainer h2 span {
   color: #da7426;
 }
 
