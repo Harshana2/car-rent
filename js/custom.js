@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Submit the form to Formspree via fetch API
-    fetch("https://formspree.io/f/xbljyqgq", { // Replace YOUR_FORM_ID with your actual Formspree ID
+    fetch("https://formspree.io/f/xldeldjb", { // Replace YOUR_FORM_ID with your actual Formspree ID
       method: "POST",
       body: new FormData(form),
       headers: {
