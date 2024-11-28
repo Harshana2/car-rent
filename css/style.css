@@ -1511,7 +1511,7 @@ color: #ffffff;
 }
 
 .payment-image {
-  width: 7%;  /* Set the width to a percentage of the parent container */
+  width: 5%;  /* Set the width to a percentage of the parent container */
   height: auto; /* Maintain the aspect ratio */
   margin-bottom: 20px; /* Space between the image and the text */
   max-width: 400px;  / /* Space between the image and text */
@@ -1563,19 +1563,21 @@ color: #ffffff;
 
 /* Text Container Styling */
 .text-container {
-  padding: 30px;
+  text-align: justify;
+  padding-left:20px; 
+  font-size: 15px;
 }
 
 /* Heading and Text Styling */
 .main-heading {
-  font-size: 45px;
+  font-size: 30px;
   color:  #003471;
   font-weight: bold;
 }
 
 .main-heading span {
   color: #da7426;
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .sub-heading {
